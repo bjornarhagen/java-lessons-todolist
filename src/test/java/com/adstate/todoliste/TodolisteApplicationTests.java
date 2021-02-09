@@ -10,8 +10,6 @@ import org.springframework.test.context.ContextConfiguration;
         classes = TodolisteApplication.class,
         loader = SpringBootContextLoader.class
 )
-@SpringBootTest(classes = TodolisteApplication.class,
-                webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT
-)
-public class TodolisteApplicationTests {
+@SpringBootTest(classes = TodolisteApplication.class)
+public abstract class TodolisteApplicationTests {
 }

@@ -19,6 +19,12 @@ public interface TodoListServices {
 
     /**
      *
+     * @param listOfTodoList
+     */
+    void savAllTodos(List<TodoListe> listOfTodoList);
+
+    /**
+     *
      * @param todoListeId
      * @return 0 if deleted
      * @throws ConfigDataResourceNotFoundException

@@ -22,6 +22,12 @@ public class TodoListServicesImpl implements TodoListServices {
     }
 
     @Override
+    public void savAllTodos(List<TodoListe> listOfTodoList) {
+        todoListeRepository.saveAll(listOfTodoList);
+    }
+
+
+    @Override
     @Transactional(rollbackFor = TodoListeNotFoundException.class)
     public TodoListe deleteTodoListe(Long id) throws TodoListeNotFoundException {
         TodoListe todoTask = todoListeRepository.getOne(id);

@@ -10,6 +10,6 @@ public class HelloUserController {
 
   @RequestMapping("hello")
   public String helloUser() {
-    return (" Hello user updated....?");
+    return (" Hei, welcome to Norway ...?");
   }
 }
